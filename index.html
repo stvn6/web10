@@ -10,44 +10,63 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+<div class="contenedor-fondo">
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+
+<!-- NavBar -->
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Pingüinos</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Inicio</a></li>
-                <li class="breadcrumb-item"><a href="#">Galeria</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Sobre los pingüinos</li>
-            </ol>
-        </nav>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Buscar</button>
+            </form>
+        </div>
     </div>
 </nav>
+<!-- Titulo -->
 <div class="jumbotron jumbotron-fluid text-center">
     <div class="container">
         <h1 class="display-4">Bienvenido a la página de Pingüinos</h1>
         <p class="lead">Descubre el mundo de estos fascinantes animales.</p>
     </div>
 </div>
+<!-- Texto principal-->
 <div class="container">
     <div class="row">
         <div class="col-md-8">
             <section>
                 <h2>¿Qué son los pingüinos?</h2>
-                <p>Los pingüinos son aves marinas que se encuentran principalmente en el hemisferio sur, aunque algunas especies habitan en regiones más templadas.</p>
-                <img src="assets/image/iamge1.webp" alt="Pingüino" class="img-fluid" style="max-width: 100%;">
+                <p>Se trata de un grupo de aves marinas no voladoras, en el que se pueden diferenciar hasta 18 especies diferentes las cuales que se distribuyen exceptuando el pingüino de las islas Galápagos exclusivamente en el Hemisferio Sur. </p>
+                <img src="assets/image/image1.jpg" alt="Pingüino" class="img-fluid redondo" style="max-width: 100%;">
             </section>
             <section>
                 <h2>Características principales</h2>
                 <p>Los pingüinos son conocidos por su habilidad para nadar y bucear. Son aves adaptadas al medio acuático y cuentan con un plumaje denso que les ayuda a mantenerse cálidos en aguas frías.</p>
-                <img src="assets/image/image2.jpg" alt="Pingüino" class="img-fluid" style="max-width: 100%;">
-            </section>
-            <section>
-                <h2>Hábitats de los pingüinos</h2>
-                <p>Los pingüinos habitan en diversas regiones del hemisferio sur, desde las regiones polares hasta las zonas más templadas. Prefieren vivir en áreas con acceso al océano, donde pueden cazar peces y otras presas marinas.</p>
+                <img src="assets/image/image2.jpg" alt="Pingüino" class="img-fluid redondo" style="max-width: 100%;">
             </section>
             <section>
                 <h2>Comportamiento</h2>
@@ -55,10 +74,11 @@
             </section>
             <section>
                 <h2>Curiosidades</h2>
-                <p>- Los pingüinos son aves pero no pueden volar, en su lugar, se desplazan bajo el agua con gran destreza.
-                    - Algunas especies de pingüinos pueden sumergirse a profundidades de hasta 500 metros en busca de alimento.
-                    - Durante el invierno, los pingüinos emperador se agrupan en colonias para protegerse del frío extremo, formando lo que se conoce como "huddle".</p>
+                <p>Los pingüinos son aves pero no pueden volar, en su lugar, se desplazan bajo el agua con gran destreza.
+                    Algunas especies de pingüinos pueden sumergirse a profundidades de hasta 500 metros en busca de alimento.
+                    Durante el invierno, los pingüinos emperador se agrupan en colonias para protegerse del frío extremo, formando lo que se conoce como "huddle".</p>
             </section>
+            <!-- Carousel -->
             <div id="carouselExample" class="carousel slide">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
@@ -68,7 +88,7 @@
                         <img src="assets/image/image4.jpg" class="d-block w-100" alt="...">
                     </div>
                     <div class="carousel-item">
-                        <img src="assets/image/image5.webp" class="d-block w-100" alt="...">
+                        <img src="assets/image/image5.jpg" class="d-block w-100" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
@@ -81,8 +101,12 @@
                 </button>
             </div>
         </div>
+        <!-- Cards -->
         <div class="col-md-4">
             <div class="card">
+                <h1>
+
+                </h1>
                 <img src="assets/image/pinguinoemperador.webp" class="card-img-top" alt="Pingüino Emperador">
                 <div class="card-body">
                     <h5 class="card-title">Pingüino Emperador</h5>
@@ -90,14 +114,14 @@
                 </div>
             </div>
             <div class="card">
-                <img src="assets/image/pinguinoadelaida.jpg" class="card-img-top" alt="Pingüino de Adelaida">
+                <img src="assets/image/pinguinoalcaldia.avif" class="card-img-top" alt="Pingüino de Adelaida">
                 <div class="card-body">
                     <h5 class="card-title">Pingüino de Adelaida</h5>
                     <p class="card-text">Los pingüinos de Adelaida son una de las especies más comunes y reconocibles de pingüinos.</p>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/image/pinguinomagallanes.jpg" class="card-img-top" alt="Pingüino de Magallanes">
+                <img src="assets/image/pinguinomagallanes.png" class="card-img-top" alt="Pingüino de Magallanes">
                 <div class="card-body">
                     <h5 class="card-title">Pingüino de Magallanes</h5>
                     <p class="card-text">Los pingüinos de Magallanes son conocidos por sus llamativos patrones de plumaje blanco y negro.</p>
@@ -106,7 +130,7 @@
         </div>
     </div>
 </div>
-
+</div>
 <script src="assets/js/bootstrap.bundle.js"></script>
 </body>
 </html>

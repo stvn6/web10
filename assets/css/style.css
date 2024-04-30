@@ -185,7 +185,7 @@ body{
 }
 body {
     background-color: mintcream;
-    color: black;
+    color: white;
 }
 .card {
     margin-bottom: 20px;
@@ -195,4 +195,18 @@ body {
 .card-img-top {
     width: 100%;
     object-fit: cover;
+}
+.contenedor-fondo{
+    background-image: url("../image/image3.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+}
+.contenedor {
+    padding-top: 100px;
+}
+.redondo{
+    border-radius: 8px;
 }
