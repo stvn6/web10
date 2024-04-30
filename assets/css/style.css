@@ -188,11 +188,11 @@ body {
     color: black;
 }
 .card {
-    margin-bottom: 20px; /* Espacio entre tarjetas */
-    margin-top: 20px; /* Margen superior para mover las tarjetas hacia abajo */
+    margin-bottom: 20px;
+    margin-top: 20px;
 }
 
 .card-img-top {
     width: 100%;
-    object-fit: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+    object-fit: cover;
 }
